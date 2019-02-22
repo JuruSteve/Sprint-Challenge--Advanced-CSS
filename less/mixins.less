@@ -1,1 +1,20 @@
 // Mixins Here
+.img-width() {
+  width: 100%;
+}
+.font-size (@fs) {
+  font-size: @fs;
+}
+.custom-button(@P:0.65rem 1.8rem, @w:inherit) {
+  .font-size(1.8rem);
+  padding: @P;
+  border-radius: 0.5rem;
+  background: @btn-bg;
+  color: @btn-text-color;
+  font-family: inherit;
+  width: @w;
+  &:hover {
+    background: @btn-text-color;
+    color: @btn-bg;
+  }
+}

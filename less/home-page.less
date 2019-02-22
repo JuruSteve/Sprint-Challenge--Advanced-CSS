@@ -28,7 +28,7 @@
     }
     .blast {
       @media @phone {
-        width: 100%;
+        .img-width();
         margin: 20px 5%;
       }
     }
@@ -67,7 +67,7 @@
     .walk-text {
       width: 50%;
       @media @phone {
-        width: 100%;
+        .img-width();
       }
       h3 {
         margin-bottom: 10px;
@@ -79,25 +79,19 @@
 
       .btn {
         button {
-          font-size: 1.8rem;
-          padding: 0.65rem 1.8rem;
-          border-radius: 0.5rem;
-          background: @btn-bg;
-          color: @btn-text-color;
-          font-family: inherit;
+          .custom-button();
           @media @phone {
-            width: 100%;
-            padding: 23.9px;
+            .custom-button(23.9px, 100%);
           }
         }
-      }
+      } //button
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
       @media @phone {
-        width: 100%;
+        .img-width();
         margin-left: 0;
       }
       img {
@@ -105,7 +99,7 @@
         height: auto;
         border-radius: 10px;
         @media @phone {
-          width: 100%;
+          .img-width();
           margin-bottom: 20px;
         }
       }

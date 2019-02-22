@@ -271,11 +271,25 @@ footer {
   background: #22283a;
   color: #f6f7f8;
   font-family: inherit;
+  width: inherit;
+}
+.home .walk .walk-text .btn button:hover {
+  background: #f6f7f8;
+  color: #22283a;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn button {
-    width: 100%;
+    font-size: 1.8rem;
     padding: 23.9px;
+    border-radius: 0.5rem;
+    background: #22283a;
+    color: #f6f7f8;
+    font-family: inherit;
+    width: 100%;
+  }
+  .home .walk .walk-text .btn button:hover {
+    background: #f6f7f8;
+    color: #22283a;
   }
 }
 .home .walk .walk-img {
